@@ -1,7 +1,17 @@
 excel chart counter
 ===================
 
-This is a very dumb one-off script that crawls throughs a list of directories, searches for excel files (specifically xlsx, but should handle xls fine w/ some tweaks). Then it goes through all the available worksheets and records the count of chart objects in the file.
+This is a very dumb one-off script that crawls through a list of directories, searches for excel files (specifically xlsx, but should handle xls fine w/ some tweaks to the regex). 
+
+Then it goes through all the available worksheets and records the count of chart objects in the file so you have a dated series of charts created throughout a year.
+
+Prerequisites
+===
+* Possibly a windows machine. Haven't tested this on Mac.
+* MS Excel that can handle the files you plan on chugging through.
+* py-win32com
+* py-dateutil
+
 
 Input assumptions
 ===
