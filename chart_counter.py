@@ -19,7 +19,7 @@ def do_everything():
   xl.Application.EnableEvents = False
   xl.Application.AskToUpdateLinks = False 
 
-  dir_queue = ["C:\\Somedirectory\\with\\your"
+  dir_queue = ["C:\\Somedirectory\\with\\your",
   "D:\\some\\other\\directory\\no\\trailing\\slashes\\pls"
   ]
 
@@ -46,7 +46,7 @@ def do_everything():
 
   chart_history = {}
 
-  #now iterate through the whole of files
+  #now iterate through the whole stack of files
   for doc_root, filelist in final_filelist:
     for fn in filelist:
       datekey = dateutil.parser.parse( file_re.search(fn).groups()[0] )
